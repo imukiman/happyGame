@@ -1,0 +1,11 @@
+//
+//  GameCatalog.swift
+//  HappyMod
+//
+//  Created by MacOne-YJ4KBJ on 10/07/2022.
+//
+
+import Foundation
+struct Game{
+    static var categories : String = "Sports,Card,Racing,Board Games,Strategy,Casual,Platformer,Arcade,Action,RPG,Fighting,Massively,Family, Shooter,Indie,Simulation,Educational,Puzzle"
+}

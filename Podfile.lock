@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - APIManager (0.1.0):
+    - Alamofire (= 4.9.1)
+    - AlamofireNetworkActivityIndicator
+    - SwiftyJSON
+  - Cosmos (23.0.0)
+  - Kingfisher (7.2.2)
+  - Realm (10.28.0):
+    - Realm/Headers (= 10.28.0)
+  - Realm/Headers (10.28.0)
+  - RealmSwift (10.28.0):
+    - Realm (= 10.28.0)
+  - SVPullToRefresh (0.4.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - APIManager (from `./Frameworks/APIManager`)
+  - Cosmos (~> 23.0)
+  - Kingfisher (~> 7.0)
+  - RealmSwift (~> 10)
+  - SVPullToRefresh
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - Cosmos
+    - Kingfisher
+    - Realm
+    - RealmSwift
+    - SVPullToRefresh
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  APIManager:
+    :path: "./Frameworks/APIManager"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  APIManager: 07e8f6c7725858b4edcee4e9573221a41adcd78b
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  Realm: a0dd4e07530faaa327244ddb4ecb445c98f0537a
+  RealmSwift: 625a21f03e01e80f6b9b86bade269ebebcd7892c
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 08ca80c7792f7c21b30607ce56b5327e2507f3dd
+
+COCOAPODS: 1.11.2

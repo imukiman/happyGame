@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067F96EA83EB80E462E4C883 /* Pods_HappyMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B20679B11A6C8F57ACFCED /* Pods_HappyMod.framework */; };
+		2E3663F0287D2A320006065C /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3663EF287D2A320006065C /* RealmData.swift */; };
+		2E3663F3287D32150006065C /* PreviewMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3663F1287D32150006065C /* PreviewMainTableViewCell.swift */; };
+		2E3663F4287D32150006065C /* PreviewMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3663F2287D32150006065C /* PreviewMainTableViewCell.xib */; };
+		2E3C2B1C2877C049000E4A60 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C2B1A2877C049000E4A60 /* GenresViewController.swift */; };
+		2E3C2B1D2877C049000E4A60 /* GenresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3C2B1B2877C049000E4A60 /* GenresViewController.xib */; };
+		2E3C2B212877C530000E4A60 /* GenresChildCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C2B1F2877C530000E4A60 /* GenresChildCollectionViewCell.swift */; };
+		2E3C2B222877C530000E4A60 /* GenresChildCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3C2B202877C530000E4A60 /* GenresChildCollectionViewCell.xib */; };
+		2E3C2B262877EDD5000E4A60 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C2B242877EDD5000E4A60 /* DetailGameViewController.swift */; };
+		2E3C2B272877EDD5000E4A60 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3C2B252877EDD5000E4A60 /* DetailGameViewController.xib */; };
+		2E3C2B2B2878090F000E4A60 /* PreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C2B292878090F000E4A60 /* PreviewCollectionViewCell.swift */; };
+		2E3C2B2C2878090F000E4A60 /* PreviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3C2B2A2878090F000E4A60 /* PreviewCollectionViewCell.xib */; };
+		2E3C2B2F28780AFB000E4A60 /* PreviewMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3C2B2D28780AFB000E4A60 /* PreviewMainCollectionViewCell.swift */; };
+		2E3C2B3028780AFB000E4A60 /* PreviewMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E3C2B2E28780AFB000E4A60 /* PreviewMainCollectionViewCell.xib */; };
+		2E7725F328798D7600CDD260 /* NewReleasesMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7725F128798D7600CDD260 /* NewReleasesMainTableViewCell.swift */; };
+		2E7725F428798D7600CDD260 /* NewReleasesMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7725F228798D7600CDD260 /* NewReleasesMainTableViewCell.xib */; };
+		2E7725F72879978F00CDD260 /* UpComingMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7725F52879978F00CDD260 /* UpComingMainTableViewCell.swift */; };
+		2E7725F82879978F00CDD260 /* UpComingMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7725F62879978F00CDD260 /* UpComingMainTableViewCell.xib */; };
+		2E77260B2879A28100CDD260 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7725FF2879A28100CDD260 /* Roboto-MediumItalic.ttf */; };
+		2E77260C2879A28100CDD260 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726002879A28100CDD260 /* Roboto-ThinItalic.ttf */; };
+		2E77260D2879A28100CDD260 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726012879A28100CDD260 /* Roboto-Light.ttf */; };
+		2E77260E2879A28100CDD260 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726022879A28100CDD260 /* Roboto-LightItalic.ttf */; };
+		2E77260F2879A28100CDD260 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726032879A28100CDD260 /* Roboto-Bold.ttf */; };
+		2E7726102879A28100CDD260 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726042879A28100CDD260 /* Roboto-Thin.ttf */; };
+		2E7726112879A28100CDD260 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726052879A28100CDD260 /* Roboto-Medium.ttf */; };
+		2E7726122879A28100CDD260 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726062879A28100CDD260 /* Roboto-Black.ttf */; };
+		2E7726132879A28100CDD260 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726072879A28100CDD260 /* Roboto-Italic.ttf */; };
+		2E7726142879A28100CDD260 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726082879A28100CDD260 /* Roboto-Regular.ttf */; };
+		2E7726152879A28100CDD260 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726092879A28100CDD260 /* Roboto-BoldItalic.ttf */; };
+		2E7726162879A28100CDD260 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E77260A2879A28100CDD260 /* Roboto-BlackItalic.ttf */; };
+		2E7726192879AD2D00CDD260 /* GenresMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7726172879AD2D00CDD260 /* GenresMainTableViewCell.swift */; };
+		2E77261A2879AD2D00CDD260 /* GenresMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7726182879AD2D00CDD260 /* GenresMainTableViewCell.xib */; };
+		2E936A8A287BBF2100757FC2 /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E936A89287BBF2100757FC2 /* RestManager.swift */; };
+		2EBA5B962875277D004E0A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5B952875277D004E0A14 /* AppDelegate.swift */; };
+		2EBA5B982875277D004E0A14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5B972875277D004E0A14 /* SceneDelegate.swift */; };
+		2EBA5B9A2875277D004E0A14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5B992875277D004E0A14 /* ViewController.swift */; };
+		2EBA5B9D2875277D004E0A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5B9B2875277D004E0A14 /* Main.storyboard */; };
+		2EBA5B9F2875277F004E0A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5B9E2875277F004E0A14 /* Assets.xcassets */; };
+		2EBA5BA22875277F004E0A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BA02875277F004E0A14 /* LaunchScreen.storyboard */; };
+		2EBA5BAA28752A0B004E0A14 /* Extension+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BA928752A0B004E0A14 /* Extension+Color.swift */; };
+		2EBA5BAF28753E1B004E0A14 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BAD28753E1B004E0A14 /* ItemCollectionViewCell.swift */; };
+		2EBA5BB028753E1B004E0A14 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BAE28753E1B004E0A14 /* ItemCollectionViewCell.xib */; };
+		2EBA5BB228754A74004E0A14 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BB128754A74004E0A14 /* ItemModel.swift */; };
+		2EBA5BC528757880004E0A14 /* itemUpCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BC328757880004E0A14 /* itemUpCollectionViewCell.swift */; };
+		2EBA5BC628757880004E0A14 /* itemUpCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BC428757880004E0A14 /* itemUpCollectionViewCell.xib */; };
+		2EBA5BDA28758D77004E0A14 /* ItemGenresCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BD828758D77004E0A14 /* ItemGenresCollectionViewCell.swift */; };
+		2EBA5BDB28758D77004E0A14 /* ItemGenresCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BD928758D77004E0A14 /* ItemGenresCollectionViewCell.xib */; };
+		2EBA5BE228766EB5004E0A14 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BE128766EB5004E0A14 /* TabBarController.swift */; };
+		2EBA5BE52876704E004E0A14 /* FeaturedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BE32876704E004E0A14 /* FeaturedController.swift */; };
+		2EBA5BE62876704E004E0A14 /* FeaturedController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BE42876704E004E0A14 /* FeaturedController.xib */; };
+		2EBA5BEA2876706E004E0A14 /* TopGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BE82876706E004E0A14 /* TopGameController.swift */; };
+		2EBA5BEB2876706E004E0A14 /* TopGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BE92876706E004E0A14 /* TopGameController.xib */; };
+		2EBA5BEF28767094004E0A14 /* MyGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BED28767094004E0A14 /* MyGameController.swift */; };
+		2EBA5BF028767094004E0A14 /* MyGameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BEE28767094004E0A14 /* MyGameController.xib */; };
+		2EBA5BF4287670AD004E0A14 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BF2287670AD004E0A14 /* SettingController.swift */; };
+		2EBA5BF5287670AD004E0A14 /* SettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BF3287670AD004E0A14 /* SettingController.xib */; };
+		2EBA5C002876C220004E0A14 /* CellSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5BFE2876C220004E0A14 /* CellSettingTableViewCell.swift */; };
+		2EBA5C012876C220004E0A14 /* CellSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5BFF2876C220004E0A14 /* CellSettingTableViewCell.xib */; };
+		2EBA5C042876E72D004E0A14 /* NewReleaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBA5C022876E72D004E0A14 /* NewReleaseViewController.swift */; };
+		2EBA5C052876E72D004E0A14 /* NewReleaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBA5C032876E72D004E0A14 /* NewReleaseViewController.xib */; };
+		2ED4DDB7287813F00061CAF0 /* LikeMainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4DDB5287813F00061CAF0 /* LikeMainCollectionViewCell.swift */; };
+		2ED4DDB8287813F00061CAF0 /* LikeMainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED4DDB6287813F00061CAF0 /* LikeMainCollectionViewCell.xib */; };
+		2ED4DDBB2878145A0061CAF0 /* LikeCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4DDB92878145A0061CAF0 /* LikeCellCollectionViewCell.swift */; };
+		2ED4DDBC2878145A0061CAF0 /* LikeCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED4DDBA2878145A0061CAF0 /* LikeCellCollectionViewCell.xib */; };
+		2ED4DDC02878250F0061CAF0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED4DDBE2878250F0061CAF0 /* AddViewController.swift */; };
+		2ED4DDC12878250F0061CAF0 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ED4DDBF2878250F0061CAF0 /* AddViewController.xib */; };
+		2EF91003287A68430012DC27 /* TopGameMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF91001287A68430012DC27 /* TopGameMainTableViewCell.swift */; };
+		2EF91004287A68430012DC27 /* TopGameMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF91002287A68430012DC27 /* TopGameMainTableViewCell.xib */; };
+		2EF91007287A7D280012DC27 /* SearchBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF91005287A7D280012DC27 /* SearchBarTableViewCell.swift */; };
+		2EF91008287A7D280012DC27 /* SearchBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF91006287A7D280012DC27 /* SearchBarTableViewCell.xib */; };
+		2EF9100D287AE8C70012DC27 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF9100C287AE8C70012DC27 /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E3663EF287D2A320006065C /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		2E3663F1287D32150006065C /* PreviewMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMainTableViewCell.swift; sourceTree = "<group>"; };
+		2E3663F2287D32150006065C /* PreviewMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewMainTableViewCell.xib; sourceTree = "<group>"; };
+		2E3C2B1A2877C049000E4A60 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
+		2E3C2B1B2877C049000E4A60 /* GenresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresViewController.xib; sourceTree = "<group>"; };
+		2E3C2B1F2877C530000E4A60 /* GenresChildCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresChildCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E3C2B202877C530000E4A60 /* GenresChildCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresChildCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E3C2B242877EDD5000E4A60 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
+		2E3C2B252877EDD5000E4A60 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
+		2E3C2B292878090F000E4A60 /* PreviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E3C2B2A2878090F000E4A60 /* PreviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E3C2B2D28780AFB000E4A60 /* PreviewMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E3C2B2E28780AFB000E4A60 /* PreviewMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E7725F128798D7600CDD260 /* NewReleasesMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesMainTableViewCell.swift; sourceTree = "<group>"; };
+		2E7725F228798D7600CDD260 /* NewReleasesMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewReleasesMainTableViewCell.xib; sourceTree = "<group>"; };
+		2E7725F52879978F00CDD260 /* UpComingMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpComingMainTableViewCell.swift; sourceTree = "<group>"; };
+		2E7725F62879978F00CDD260 /* UpComingMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpComingMainTableViewCell.xib; sourceTree = "<group>"; };
+		2E7725FF2879A28100CDD260 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2E7726002879A28100CDD260 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		2E7726012879A28100CDD260 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		2E7726022879A28100CDD260 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		2E7726032879A28100CDD260 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		2E7726042879A28100CDD260 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		2E7726052879A28100CDD260 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		2E7726062879A28100CDD260 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		2E7726072879A28100CDD260 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		2E7726082879A28100CDD260 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		2E7726092879A28100CDD260 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2E77260A2879A28100CDD260 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		2E7726172879AD2D00CDD260 /* GenresMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresMainTableViewCell.swift; sourceTree = "<group>"; };
+		2E7726182879AD2D00CDD260 /* GenresMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresMainTableViewCell.xib; sourceTree = "<group>"; };
+		2E936A89287BBF2100757FC2 /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		2EBA5B922875277D004E0A14 /* HappyMod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyMod.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBA5B952875277D004E0A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EBA5B972875277D004E0A14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EBA5B992875277D004E0A14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EBA5B9C2875277D004E0A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EBA5B9E2875277F004E0A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EBA5BA12875277F004E0A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EBA5BA32875277F004E0A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBA5BA928752A0B004E0A14 /* Extension+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Color.swift"; sourceTree = "<group>"; };
+		2EBA5BAD28753E1B004E0A14 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EBA5BAE28753E1B004E0A14 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EBA5BB128754A74004E0A14 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		2EBA5BC328757880004E0A14 /* itemUpCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemUpCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EBA5BC428757880004E0A14 /* itemUpCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = itemUpCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EBA5BD828758D77004E0A14 /* ItemGenresCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGenresCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EBA5BD928758D77004E0A14 /* ItemGenresCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemGenresCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EBA5BE128766EB5004E0A14 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2EBA5BE32876704E004E0A14 /* FeaturedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedController.swift; sourceTree = "<group>"; };
+		2EBA5BE42876704E004E0A14 /* FeaturedController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedController.xib; sourceTree = "<group>"; };
+		2EBA5BE82876706E004E0A14 /* TopGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGameController.swift; sourceTree = "<group>"; };
+		2EBA5BE92876706E004E0A14 /* TopGameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopGameController.xib; sourceTree = "<group>"; };
+		2EBA5BED28767094004E0A14 /* MyGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGameController.swift; sourceTree = "<group>"; };
+		2EBA5BEE28767094004E0A14 /* MyGameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyGameController.xib; sourceTree = "<group>"; };
+		2EBA5BF2287670AD004E0A14 /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		2EBA5BF3287670AD004E0A14 /* SettingController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingController.xib; sourceTree = "<group>"; };
+		2EBA5BFE2876C220004E0A14 /* CellSettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSettingTableViewCell.swift; sourceTree = "<group>"; };
+		2EBA5BFF2876C220004E0A14 /* CellSettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellSettingTableViewCell.xib; sourceTree = "<group>"; };
+		2EBA5C022876E72D004E0A14 /* NewReleaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseViewController.swift; sourceTree = "<group>"; };
+		2EBA5C032876E72D004E0A14 /* NewReleaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewReleaseViewController.xib; sourceTree = "<group>"; };
+		2ED4DDB5287813F00061CAF0 /* LikeMainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeMainCollectionViewCell.swift; sourceTree = "<group>"; };
+		2ED4DDB6287813F00061CAF0 /* LikeMainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeMainCollectionViewCell.xib; sourceTree = "<group>"; };
+		2ED4DDB92878145A0061CAF0 /* LikeCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		2ED4DDBA2878145A0061CAF0 /* LikeCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		2ED4DDBE2878250F0061CAF0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		2ED4DDBF2878250F0061CAF0 /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		2EF91001287A68430012DC27 /* TopGameMainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGameMainTableViewCell.swift; sourceTree = "<group>"; };
+		2EF91002287A68430012DC27 /* TopGameMainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopGameMainTableViewCell.xib; sourceTree = "<group>"; };
+		2EF91005287A7D280012DC27 /* SearchBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCell.swift; sourceTree = "<group>"; };
+		2EF91006287A7D280012DC27 /* SearchBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarTableViewCell.xib; sourceTree = "<group>"; };
+		2EF9100C287AE8C70012DC27 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		71488646E66A95873E6EE4EB /* Pods-HappyMod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyMod.debug.xcconfig"; path = "Target Support Files/Pods-HappyMod/Pods-HappyMod.debug.xcconfig"; sourceTree = "<group>"; };
+		D2B20679B11A6C8F57ACFCED /* Pods_HappyMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDB0F873B61837F3EB930FA1 /* Pods-HappyMod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyMod.release.xcconfig"; path = "Target Support Files/Pods-HappyMod/Pods-HappyMod.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EBA5B8F2875277D004E0A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067F96EA83EB80E462E4C883 /* Pods_HappyMod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E3663EE287D2A230006065C /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				2E3663EF287D2A320006065C /* RealmData.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		2E3C2B192877C012000E4A60 /* Genres */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C2B1A2877C049000E4A60 /* GenresViewController.swift */,
+				2E3C2B1B2877C049000E4A60 /* GenresViewController.xib */,
+				2E3C2B1E2877C4FD000E4A60 /* Cell */,
+			);
+			path = Genres;
+			sourceTree = "<group>";
+		};
+		2E3C2B1E2877C4FD000E4A60 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C2B1F2877C530000E4A60 /* GenresChildCollectionViewCell.swift */,
+				2E3C2B202877C530000E4A60 /* GenresChildCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E3C2B232877ED96000E4A60 /* DetailGame */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C2B242877EDD5000E4A60 /* DetailGameViewController.swift */,
+				2E3C2B252877EDD5000E4A60 /* DetailGameViewController.xib */,
+				2E3C2B282877FDD1000E4A60 /* Cell */,
+			);
+			path = DetailGame;
+			sourceTree = "<group>";
+		};
+		2E3C2B282877FDD1000E4A60 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2E3C2B292878090F000E4A60 /* PreviewCollectionViewCell.swift */,
+				2E3C2B2A2878090F000E4A60 /* PreviewCollectionViewCell.xib */,
+				2E3C2B2D28780AFB000E4A60 /* PreviewMainCollectionViewCell.swift */,
+				2E3C2B2E28780AFB000E4A60 /* PreviewMainCollectionViewCell.xib */,
+				2ED4DDB5287813F00061CAF0 /* LikeMainCollectionViewCell.swift */,
+				2ED4DDB6287813F00061CAF0 /* LikeMainCollectionViewCell.xib */,
+				2ED4DDB92878145A0061CAF0 /* LikeCellCollectionViewCell.swift */,
+				2ED4DDBA2878145A0061CAF0 /* LikeCellCollectionViewCell.xib */,
+				2E3663F1287D32150006065C /* PreviewMainTableViewCell.swift */,
+				2E3663F2287D32150006065C /* PreviewMainTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E7725FC2879A24D00CDD260 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				2E7726062879A28100CDD260 /* Roboto-Black.ttf */,
+				2E77260A2879A28100CDD260 /* Roboto-BlackItalic.ttf */,
+				2E7726032879A28100CDD260 /* Roboto-Bold.ttf */,
+				2E7726092879A28100CDD260 /* Roboto-BoldItalic.ttf */,
+				2E7726072879A28100CDD260 /* Roboto-Italic.ttf */,
+				2E7726012879A28100CDD260 /* Roboto-Light.ttf */,
+				2E7726022879A28100CDD260 /* Roboto-LightItalic.ttf */,
+				2E7726052879A28100CDD260 /* Roboto-Medium.ttf */,
+				2E7725FF2879A28100CDD260 /* Roboto-MediumItalic.ttf */,
+				2E7726082879A28100CDD260 /* Roboto-Regular.ttf */,
+				2E7726042879A28100CDD260 /* Roboto-Thin.ttf */,
+				2E7726002879A28100CDD260 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		2E936A88287BBF0D00757FC2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2E936A89287BBF2100757FC2 /* RestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2EBA5B892875277D004E0A14 = {
+			isa = PBXGroup;
+			children = (
+				2EBA5B942875277D004E0A14 /* HappyMod */,
+				2EBA5B932875277D004E0A14 /* Products */,
+				A762A4D1E77919CE820BE208 /* Pods */,
+				40722D65CACF95D30E31140F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EBA5B932875277D004E0A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5B922875277D004E0A14 /* HappyMod.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EBA5B942875277D004E0A14 /* HappyMod */ = {
+			isa = PBXGroup;
+			children = (
+				2E3663EE287D2A230006065C /* Realm */,
+				2EBA5BFC28769F70004E0A14 /* Root */,
+				2E936A88287BBF0D00757FC2 /* Manager */,
+				2EF91009287AE74D0012DC27 /* Api */,
+				2E7725FC2879A24D00CDD260 /* Roboto */,
+				2EBA5BD3287588D9004E0A14 /* Model */,
+				2EBA5BD22875873C004E0A14 /* Extension */,
+				2EBA5BCB287586BB004E0A14 /* Screen */,
+				2EBA5B9E2875277F004E0A14 /* Assets.xcassets */,
+				2EBA5BA02875277F004E0A14 /* LaunchScreen.storyboard */,
+				2EBA5BA32875277F004E0A14 /* Info.plist */,
+			);
+			path = HappyMod;
+			sourceTree = "<group>";
+		};
+		2EBA5BCB287586BB004E0A14 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BF6287671FA004E0A14 /* MainTabBar */,
+				2EBA5BDC28759B6E004E0A14 /* Featured */,
+				2EBA5BE728767054004E0A14 /* TopGame */,
+				2EBA5BEC2876707D004E0A14 /* MyGame */,
+				2EBA5BF128767099004E0A14 /* Setting */,
+				2EBA5C062876EBCE004E0A14 /* NewAndDicover */,
+				2E3C2B192877C012000E4A60 /* Genres */,
+				2E3C2B232877ED96000E4A60 /* DetailGame */,
+				2ED4DDBD287824E80061CAF0 /* Add */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2EBA5BD1287586EA004E0A14 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BAD28753E1B004E0A14 /* ItemCollectionViewCell.swift */,
+				2EBA5BAE28753E1B004E0A14 /* ItemCollectionViewCell.xib */,
+				2EBA5BC328757880004E0A14 /* itemUpCollectionViewCell.swift */,
+				2EBA5BC428757880004E0A14 /* itemUpCollectionViewCell.xib */,
+				2EBA5BD828758D77004E0A14 /* ItemGenresCollectionViewCell.swift */,
+				2EBA5BD928758D77004E0A14 /* ItemGenresCollectionViewCell.xib */,
+				2E7725F128798D7600CDD260 /* NewReleasesMainTableViewCell.swift */,
+				2E7725F228798D7600CDD260 /* NewReleasesMainTableViewCell.xib */,
+				2E7725F52879978F00CDD260 /* UpComingMainTableViewCell.swift */,
+				2E7725F62879978F00CDD260 /* UpComingMainTableViewCell.xib */,
+				2E7726172879AD2D00CDD260 /* GenresMainTableViewCell.swift */,
+				2E7726182879AD2D00CDD260 /* GenresMainTableViewCell.xib */,
+				2EF91005287A7D280012DC27 /* SearchBarTableViewCell.swift */,
+				2EF91006287A7D280012DC27 /* SearchBarTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2EBA5BD22875873C004E0A14 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BA928752A0B004E0A14 /* Extension+Color.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2EBA5BD3287588D9004E0A14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BB128754A74004E0A14 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2EBA5BDC28759B6E004E0A14 /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BE32876704E004E0A14 /* FeaturedController.swift */,
+				2EBA5BE42876704E004E0A14 /* FeaturedController.xib */,
+				2EBA5BD1287586EA004E0A14 /* Cell */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		2EBA5BE728767054004E0A14 /* TopGame */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BE82876706E004E0A14 /* TopGameController.swift */,
+				2EBA5BE92876706E004E0A14 /* TopGameController.xib */,
+				2EBA5BF728768155004E0A14 /* Cell */,
+			);
+			path = TopGame;
+			sourceTree = "<group>";
+		};
+		2EBA5BEC2876707D004E0A14 /* MyGame */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BED28767094004E0A14 /* MyGameController.swift */,
+				2EBA5BEE28767094004E0A14 /* MyGameController.xib */,
+			);
+			path = MyGame;
+			sourceTree = "<group>";
+		};
+		2EBA5BF128767099004E0A14 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BFD2876C1F7004E0A14 /* Cell */,
+				2EBA5BF2287670AD004E0A14 /* SettingController.swift */,
+				2EBA5BF3287670AD004E0A14 /* SettingController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2EBA5BF6287671FA004E0A14 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BE128766EB5004E0A14 /* TabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		2EBA5BF728768155004E0A14 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EF91001287A68430012DC27 /* TopGameMainTableViewCell.swift */,
+				2EF91002287A68430012DC27 /* TopGameMainTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2EBA5BFC28769F70004E0A14 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5B952875277D004E0A14 /* AppDelegate.swift */,
+				2EBA5B972875277D004E0A14 /* SceneDelegate.swift */,
+				2EBA5B992875277D004E0A14 /* ViewController.swift */,
+				2EBA5B9B2875277D004E0A14 /* Main.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2EBA5BFD2876C1F7004E0A14 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5BFE2876C220004E0A14 /* CellSettingTableViewCell.swift */,
+				2EBA5BFF2876C220004E0A14 /* CellSettingTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2EBA5C062876EBCE004E0A14 /* NewAndDicover */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA5C022876E72D004E0A14 /* NewReleaseViewController.swift */,
+				2EBA5C032876E72D004E0A14 /* NewReleaseViewController.xib */,
+			);
+			path = NewAndDicover;
+			sourceTree = "<group>";
+		};
+		2ED4DDBD287824E80061CAF0 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				2ED4DDBE2878250F0061CAF0 /* AddViewController.swift */,
+				2ED4DDBF2878250F0061CAF0 /* AddViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		2EF91009287AE74D0012DC27 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2EF9100C287AE8C70012DC27 /* Game.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		40722D65CACF95D30E31140F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2B20679B11A6C8F57ACFCED /* Pods_HappyMod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A762A4D1E77919CE820BE208 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71488646E66A95873E6EE4EB /* Pods-HappyMod.debug.xcconfig */,
+				FDB0F873B61837F3EB930FA1 /* Pods-HappyMod.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EBA5B912875277D004E0A14 /* HappyMod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EBA5BA62875277F004E0A14 /* Build configuration list for PBXNativeTarget "HappyMod" */;
+			buildPhases = (
+				AEB7DEBD0D56118FDB1B88F7 /* [CP] Check Pods Manifest.lock */,
+				2EBA5B8E2875277D004E0A14 /* Sources */,
+				2EBA5B8F2875277D004E0A14 /* Frameworks */,
+				2EBA5B902875277D004E0A14 /* Resources */,
+				AC62AD72A9D1BB4723D37A70 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyMod;
+			productName = HappyMod;
+			productReference = 2EBA5B922875277D004E0A14 /* HappyMod.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EBA5B8A2875277D004E0A14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					2EBA5B912875277D004E0A14 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2EBA5B8D2875277D004E0A14 /* Build configuration list for PBXProject "HappyMod" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EBA5B892875277D004E0A14;
+			productRefGroup = 2EBA5B932875277D004E0A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EBA5B912875277D004E0A14 /* HappyMod */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EBA5B902875277D004E0A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E77260E2879A28100CDD260 /* Roboto-LightItalic.ttf in Resources */,
+				2E7726132879A28100CDD260 /* Roboto-Italic.ttf in Resources */,
+				2E7725F82879978F00CDD260 /* UpComingMainTableViewCell.xib in Resources */,
+				2EBA5BF028767094004E0A14 /* MyGameController.xib in Resources */,
+				2E77260D2879A28100CDD260 /* Roboto-Light.ttf in Resources */,
+				2E77260B2879A28100CDD260 /* Roboto-MediumItalic.ttf in Resources */,
+				2E7725F428798D7600CDD260 /* NewReleasesMainTableViewCell.xib in Resources */,
+				2E77260C2879A28100CDD260 /* Roboto-ThinItalic.ttf in Resources */,
+				2EBA5BA22875277F004E0A14 /* LaunchScreen.storyboard in Resources */,
+				2E7726152879A28100CDD260 /* Roboto-BoldItalic.ttf in Resources */,
+				2ED4DDC12878250F0061CAF0 /* AddViewController.xib in Resources */,
+				2EBA5BDB28758D77004E0A14 /* ItemGenresCollectionViewCell.xib in Resources */,
+				2E77260F2879A28100CDD260 /* Roboto-Bold.ttf in Resources */,
+				2E3C2B3028780AFB000E4A60 /* PreviewMainCollectionViewCell.xib in Resources */,
+				2E7726142879A28100CDD260 /* Roboto-Regular.ttf in Resources */,
+				2E7726162879A28100CDD260 /* Roboto-BlackItalic.ttf in Resources */,
+				2EBA5C052876E72D004E0A14 /* NewReleaseViewController.xib in Resources */,
+				2E3663F4287D32150006065C /* PreviewMainTableViewCell.xib in Resources */,
+				2EBA5BC628757880004E0A14 /* itemUpCollectionViewCell.xib in Resources */,
+				2E3C2B222877C530000E4A60 /* GenresChildCollectionViewCell.xib in Resources */,
+				2E3C2B1D2877C049000E4A60 /* GenresViewController.xib in Resources */,
+				2E7726112879A28100CDD260 /* Roboto-Medium.ttf in Resources */,
+				2E3C2B2C2878090F000E4A60 /* PreviewCollectionViewCell.xib in Resources */,
+				2EF91004287A68430012DC27 /* TopGameMainTableViewCell.xib in Resources */,
+				2EBA5BE62876704E004E0A14 /* FeaturedController.xib in Resources */,
+				2EBA5BB028753E1B004E0A14 /* ItemCollectionViewCell.xib in Resources */,
+				2ED4DDBC2878145A0061CAF0 /* LikeCellCollectionViewCell.xib in Resources */,
+				2EBA5C012876C220004E0A14 /* CellSettingTableViewCell.xib in Resources */,
+				2E7726102879A28100CDD260 /* Roboto-Thin.ttf in Resources */,
+				2ED4DDB8287813F00061CAF0 /* LikeMainCollectionViewCell.xib in Resources */,
+				2EBA5B9F2875277F004E0A14 /* Assets.xcassets in Resources */,
+				2EF91008287A7D280012DC27 /* SearchBarTableViewCell.xib in Resources */,
+				2EBA5B9D2875277D004E0A14 /* Main.storyboard in Resources */,
+				2EBA5BF5287670AD004E0A14 /* SettingController.xib in Resources */,
+				2E77261A2879AD2D00CDD260 /* GenresMainTableViewCell.xib in Resources */,
+				2E7726122879A28100CDD260 /* Roboto-Black.ttf in Resources */,
+				2E3C2B272877EDD5000E4A60 /* DetailGameViewController.xib in Resources */,
+				2EBA5BEB2876706E004E0A14 /* TopGameController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC62AD72A9D1BB4723D37A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyMod/Pods-HappyMod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HappyMod/Pods-HappyMod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HappyMod/Pods-HappyMod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB7DEBD0D56118FDB1B88F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HappyMod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EBA5B8E2875277D004E0A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3C2B1C2877C049000E4A60 /* GenresViewController.swift in Sources */,
+				2ED4DDC02878250F0061CAF0 /* AddViewController.swift in Sources */,
+				2E3C2B212877C530000E4A60 /* GenresChildCollectionViewCell.swift in Sources */,
+				2E3663F3287D32150006065C /* PreviewMainTableViewCell.swift in Sources */,
+				2EBA5C042876E72D004E0A14 /* NewReleaseViewController.swift in Sources */,
+				2E3C2B2F28780AFB000E4A60 /* PreviewMainCollectionViewCell.swift in Sources */,
+				2EBA5BE52876704E004E0A14 /* FeaturedController.swift in Sources */,
+				2EF91003287A68430012DC27 /* TopGameMainTableViewCell.swift in Sources */,
+				2ED4DDBB2878145A0061CAF0 /* LikeCellCollectionViewCell.swift in Sources */,
+				2EBA5B9A2875277D004E0A14 /* ViewController.swift in Sources */,
+				2EBA5C002876C220004E0A14 /* CellSettingTableViewCell.swift in Sources */,
+				2E7725F72879978F00CDD260 /* UpComingMainTableViewCell.swift in Sources */,
+				2EBA5BC528757880004E0A14 /* itemUpCollectionViewCell.swift in Sources */,
+				2E936A8A287BBF2100757FC2 /* RestManager.swift in Sources */,
+				2EBA5B962875277D004E0A14 /* AppDelegate.swift in Sources */,
+				2EBA5BEF28767094004E0A14 /* MyGameController.swift in Sources */,
+				2EBA5B982875277D004E0A14 /* SceneDelegate.swift in Sources */,
+				2EBA5BAF28753E1B004E0A14 /* ItemCollectionViewCell.swift in Sources */,
+				2EF9100D287AE8C70012DC27 /* Game.swift in Sources */,
+				2EBA5BF4287670AD004E0A14 /* SettingController.swift in Sources */,
+				2E3C2B2B2878090F000E4A60 /* PreviewCollectionViewCell.swift in Sources */,
+				2E7725F328798D7600CDD260 /* NewReleasesMainTableViewCell.swift in Sources */,
+				2E3C2B262877EDD5000E4A60 /* DetailGameViewController.swift in Sources */,
+				2EBA5BEA2876706E004E0A14 /* TopGameController.swift in Sources */,
+				2EBA5BDA28758D77004E0A14 /* ItemGenresCollectionViewCell.swift in Sources */,
+				2EBA5BB228754A74004E0A14 /* ItemModel.swift in Sources */,
+				2EBA5BE228766EB5004E0A14 /* TabBarController.swift in Sources */,
+				2ED4DDB7287813F00061CAF0 /* LikeMainCollectionViewCell.swift in Sources */,
+				2EF91007287A7D280012DC27 /* SearchBarTableViewCell.swift in Sources */,
+				2E3663F0287D2A320006065C /* RealmData.swift in Sources */,
+				2E7726192879AD2D00CDD260 /* GenresMainTableViewCell.swift in Sources */,
+				2EBA5BAA28752A0B004E0A14 /* Extension+Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EBA5B9B2875277D004E0A14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBA5B9C2875277D004E0A14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EBA5BA02875277F004E0A14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EBA5BA12875277F004E0A14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EBA5BA42875277F004E0A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EBA5BA52875277F004E0A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EBA5BA72875277F004E0A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71488646E66A95873E6EE4EB /* Pods-HappyMod.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S68FJH8467;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HappyMod/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duc.HappyMod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EBA5BA82875277F004E0A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB0F873B61837F3EB930FA1 /* Pods-HappyMod.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S68FJH8467;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HappyMod/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.duc.HappyMod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EBA5B8D2875277D004E0A14 /* Build configuration list for PBXProject "HappyMod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBA5BA42875277F004E0A14 /* Debug */,
+				2EBA5BA52875277F004E0A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EBA5BA62875277F004E0A14 /* Build configuration list for PBXNativeTarget "HappyMod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EBA5BA72875277F004E0A14 /* Debug */,
+				2EBA5BA82875277F004E0A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EBA5B8A2875277D004E0A14 /* Project object */;
+}

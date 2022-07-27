@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - APIManager (0.1.0):
+    - Alamofire (= 4.9.1)
+    - AlamofireNetworkActivityIndicator
+    - SwiftyJSON
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - APIManager (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  APIManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  APIManager: 07e8f6c7725858b4edcee4e9573221a41adcd78b
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: e9b5ba586a4bb1a53ad669216807c590c7302674
+
+COCOAPODS: 1.11.3

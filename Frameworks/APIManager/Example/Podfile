@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'APIManager_Example' do
+  pod 'APIManager', :path => '../'
+
+  target 'APIManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
